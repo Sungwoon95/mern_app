@@ -1,0 +1,3 @@
+.UserItem{list-style:none; width:360px; padding:10px; margin:0 auto; border-radius:10px; background-color:#ffeded;}
+.UserItem__content{display:flex; align-items:center; height:100%;}
+a{display:block; width:100%;}
