@@ -1,0 +1,24 @@
+.MainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SideDrawer {
+  display: none;
+}
+.MainNavigation__menu {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .MainNavigation__nav {
+    display: none;
+  }
+  .SideDrawer {
+    display: block;
+  }
+  .MainNavigation__menu {
+    display: block;
+  }
+}

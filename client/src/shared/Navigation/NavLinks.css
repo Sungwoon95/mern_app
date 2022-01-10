@@ -1,0 +1,7 @@
+.NavLinks {
+  display: flex;
+}
+
+.NavLinks > li + li {
+  margin-left: 15px;
+}

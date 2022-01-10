@@ -5,7 +5,7 @@ import Avatar from '../../shared/components/Avatar';
 import './UserItem.css'
 
 const UserItem = ({image, name, placeCount,id}) => {
-    return (
+  return (
       <li className='UserItem'>
         <Link to={`/${id}/places`}>
         <div className='UserItem__content'>

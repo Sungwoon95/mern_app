@@ -1,0 +1,3 @@
+.placeItem__action{display:flex;}
+.button{display:block; width:80px; box-sizing:border-box; text-align:center; padding: 5px 10px; border-radius:5px; border:1px solid #ff4d4d; background-color:transparent; line-height:18px; height:30px; color:#ff4d4d;}
+.button--danger{background-color:#ff4d4d; color:white;}

@@ -1,9 +1,11 @@
+import React from 'react';
+
 
 const NewPlace = () => {
     return (
-      <h1>
-        NewPlace
-      </h1>
+      <form className='place-form'>
+        <Input type ='text' label='Title' />
+      </form>
     );
   }
   
