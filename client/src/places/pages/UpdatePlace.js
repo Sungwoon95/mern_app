@@ -1,8 +1,11 @@
 import React from 'react';
 import { useParams} from 'react-router-dom';
 
+import Input from '../../shared/components/Input';
+import Button from '../../shared/components/Button';
+
 const PLACE = [{
-  id:156,
+  id:'156',
   imageUrl:156,
   title:156,
   description:156,
@@ -14,7 +17,7 @@ const PLACE = [{
   },
 },
 {
-  id:157,
+  id:'157',
   imageUrl:156,
   title:156,
   description:156,
@@ -27,21 +30,25 @@ const PLACE = [{
 },]
 
 const UpdatePlace = () => {
-  const placeId= useParams().placeId
+  const placeId= useParams().pId
   const myPlace = PLACE.find(
     item => item.id === placeId
   )
 
   if (!myPlace){
+    
     return(
       <p>NO pLace</p>
     )
   }
   
   return(
-    <>
-    Update Place
-    </>
+    <form>
+      <Input id='title' element='input' label="Title" onInput={()=>{}} value={myPlace.title} />
+      <Input id='descript' element='input' label="Descript" onInput={()=>{}} value={myPlace.description}/>
+      <Input id='adress' element='input' label="Address" onInput={()=>{}} value={myPlace.address}/>
+      <Button>Update</Button>
+    </form>
   )
 }
 
